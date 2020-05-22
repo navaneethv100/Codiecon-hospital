@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fall Detection</title>
+    <style>
+    
+    .container{
+        height:1500px;
+        width:1500px;
+        background: red;
+    }
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    </style>
+</head>
+<body>
+    <div class='container'>
+
+    </div>
+    <script>
+    let ws = new WebSocket('ws://10.177.7.176:3006/getGyroPhoneTest');
+    ws.onopen = () =>{
+        ws.send(JSON.stringify({
+            action:'browser'
+        }))
+    }
+
+    ws.onmessage= (message) =>{
+        console.log(message);
+        if(message.data=='1'){
+            document.querySelector('.container').style.background='red';
+
+        }
+        else             document.querySelector('.container').style.background='blue';
+
+    }
+    </script>
+</body>
+</html>

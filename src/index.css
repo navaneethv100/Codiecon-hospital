@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+:root{
+  --bright-red:#ff165d;
+  --bright-blue:#00aced;
+  --facebook-bg:#0077e2;
+  --twitter-bg:#00aced;
+  --faded-blue:#384259;
+  --app-bg:#252a34;
+  --light-blue:#defcfc;
+  --light-grey:#333333;
+  --blue-grey:#303841;
+}

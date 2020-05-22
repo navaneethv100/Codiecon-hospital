@@ -1,0 +1,18 @@
+footer {
+    color: white;
+}
+
+footer .footer-copyright {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.footer-brand-container{
+    background: var(--faded-blue);
+}
+
+.Silicon-Brand-Brand{
+    font-family: 'Pacifico', cursive;
+    
+}

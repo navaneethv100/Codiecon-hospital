@@ -37,7 +37,7 @@
     "reactn": "^1.0.0",
     "tachyons": "^4.11.1",
     "webfontloader": "^1.6.28",
-    "ws": "^6.2.0"
+    "ws": "^7.4.6"
   },
   "homepage": "./",
   "main": "src/electron-starter.js",
